@@ -14,7 +14,7 @@ const Login = () => {
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
-      const { data } = await axios.get("/register");
+      const { data } = await axios.get("/login");
       const user = data.find((u) => u.email === email && u.password === password);
       if (user) {
         navigate("/home");
