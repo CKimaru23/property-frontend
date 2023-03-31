@@ -17,7 +17,7 @@ const Login = () => {
       const { data } = await axios.get("/login");
       const user = data.find((u) => u.email === email && u.password === password);
       if (user) {
-        navigate("/home");
+        navigate("/landlord");
       } else {
         setError("Email or password is incorrect");
       }

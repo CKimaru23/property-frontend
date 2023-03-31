@@ -5,6 +5,7 @@ import About from './pages/About.js'
 import Contact from './pages/Contact.js';
 import Login from './pages/Login.js';
 import Signup from './pages/Signup.js';
+import Landlord from './pages/Landlord.js';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Route path="/contact" element={<Contact/>} />
       <Route path="/login" element={<Login/>} />
       <Route path="/signup" element={<Signup/>} />
+      <Route path="/landlord" element={<Landlord/>} />
     </Routes>
   </BrowserRouter>
   );

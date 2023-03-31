@@ -1,12 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Menu } from 'semantic-ui-react';
+import { Menu, Image } from 'semantic-ui-react';
 
 const Navbar = () => {
   return (
     <Menu inverted fixed="top">
       <Menu.Item>
-        <Link to="/">Logo</Link>
+        <Link to="/"><Image avatar src='https://react.semantic-ui.com/images/avatar/large/matthew.png' /></Link>
       </Menu.Item>
       <Menu.Item>
         <Link to="/">Home</Link>

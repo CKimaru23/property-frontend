@@ -48,9 +48,9 @@ const Signup = () => {
     setIsSubmitting(true);
     if (validateForm()) {
       try {
-        const response = await axios.post('/landlords', formData);
+        const response = await axios.post('http://localhost:3000/landlords', formData);
         console.log(response.data);
-        navigate('/success'); // redirect to success page
+        navigate('/landlord'); // redirect to success page
       } catch (error) {
         console.error(error);
       }
